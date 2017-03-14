@@ -3,6 +3,75 @@ html {
 }
 
 body {
-  margin: 0;
-  font: 16px / 1 sans-serif;
+  font-family: Arial;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: LightGrey;
+  border-top: 0.3em solid Teal;
+  padding-top: 20px;
+
+
+}
+
+nav .links a {
+  padding-right: 40px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.links {
+  font-size: 15px;
+}
+
+
+section.title {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+  margin: auto;
+  max-width: 300px;
+}
+
+
+.photos {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 0px;
+}
+
+
+section.text {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  margin-left: 45px;
+
+}
+
+.modernlayouts {
+  width: 500px;
+  font-size: 14px;
+
+}
+
+.modernlayouts p {
+  column-count: 3;
+  font-size: 13px;
+}
+
+.whatsnew {
+  width: 150px;
+  font-size: 14px;
+}
+
+#viewrecent {
+  color: inherit;
+  font-size: 12px;
 }
