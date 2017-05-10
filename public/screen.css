@@ -8,18 +8,28 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-between;
-  background-color: LightGrey;
+  justify-content: space-around;
+  background-color: WhiteSmoke;
   border-top: 0.3em solid Teal;
   padding-top: 20px;
+}
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
+#current {
+  color: Red;
 }
 
 nav .links a {
   padding-right: 40px;
   text-decoration: none;
   color: inherit;
+
 }
 
 .logo {
@@ -37,6 +47,7 @@ section.title {
   padding: 5px;
   margin: auto;
   max-width: 300px;
+  padding-top: 3.5em;
 }
 
 
@@ -49,9 +60,8 @@ section.title {
 
 section.text {
   display: flex;
-  text-align: left;
-  justify-content: center;
-  margin-left: 45px;
+  max-width: 600px;
+  margin: auto;
 
 }
 
@@ -74,4 +84,20 @@ section.text {
 #viewrecent {
   color: inherit;
   font-size: 12px;
+}
+
+
+
+@media (max-width: 460px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  #search {
+    padding: 10px;
+  }
+
+  section.title {
+    flex-wrap: wrap;
+  }
 }
